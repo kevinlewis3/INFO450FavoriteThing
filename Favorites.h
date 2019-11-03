@@ -19,6 +19,7 @@ public:
 
     ~Favorites();
 
+    //Implementing getters and setters.
     void getFavoritesInput();
 
     void showFavorites();

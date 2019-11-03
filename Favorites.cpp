@@ -28,7 +28,7 @@ Favorites::~Favorites()
 
 }
 
-void Favorites::getFavoritesInput()
+void Favorites::getFavoritesInput() //Getting users input about their favorites.
 {
     cout << "What is the name of your favorite beer from a Microbrewery? ";
     getline(cin, name);
@@ -100,7 +100,7 @@ void Favorites::setBeerType(string b)
     beerType = b;
 }
 
-ostream& operator<<(ostream & output, Favorites &i)
+ostream& operator<<(ostream & output, Favorites &i) //Displaying the information collected from the user.
 {
     output << "Beer: " <<i.name << " | Type: " << i.beerType << " | Price: $" << i.price <<endl;
     output << "Alcohol Content: " << i.alcContent << " | Location: " << i.location << endl;
