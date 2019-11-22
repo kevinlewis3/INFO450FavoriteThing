@@ -6,35 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.cpp
-iostream
--
-string
--
-Favorites.h
-/Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.h
-
 /Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.h
 iostream
 -
 string
 -
 
-/Users/klewis/Documents/GitHub/INFO450FavoriteThing/FavoritesList.h
+/Users/klewis/Documents/GitHub/INFO450FavoriteThing/FavoritesList.cpp
 iostream
 -
 string
 -
-Favorites.h
-/Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.h
-
-/Users/klewis/Documents/GitHub/INFO450FavoriteThing/main.cpp
-iostream
--
-string
+fstream
 -
 Favorites.h
 /Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.h
 FavoritesList.h
 /Users/klewis/Documents/GitHub/INFO450FavoriteThing/FavoritesList.h
+
+/Users/klewis/Documents/GitHub/INFO450FavoriteThing/FavoritesList.h
+iostream
+-
+string
+-
+Favorites.h
+/Users/klewis/Documents/GitHub/INFO450FavoriteThing/Favorites.h
 
