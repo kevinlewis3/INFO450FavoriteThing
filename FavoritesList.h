@@ -6,7 +6,6 @@ using namespace std;
 
 class FavoritesList
 {
-    int totalFavorites;
 private:
     Favorites beers [100];
 public:
@@ -14,8 +13,6 @@ public:
     FavoritesList();
     void addFavorites();
     void showFavorites();
-    void readFromFile(string filename);
-    void saveFile(string filename);
     ~FavoritesList();
 };
 

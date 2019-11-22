@@ -4,47 +4,28 @@
 #include "FavoritesList.h"
 using namespace std;
 
-int main() {
-    int selection = 1;
+int main()
+{
     FavoritesList list;
-    string fileLocation;
+    char cont = 'y';
 
+    //Using a do/while loop to collect information from the user
     do {
-        cout << "1. Read items from a personal list." << endl;
-        cout << "2. Add a new beer to your list." << endl;
-        cout << "3. Display your favorite beers." << endl;
-        cout << "4. Export your favorites to a file." << endl;
-        cout << "0. Exit." << endl;
-        cout << "Enter a number to choose from the above options: ";
-        cin >> selection;
+        //Asking user for information about their favorite beers.
+        cout << "Please enter the details about your favorite Microbreweries beer " << list.numFavorites + 1 << "." << endl;
+        list.addFavorites();
+        cout << "Do you have another beer you'd like to add? Y/N: ";
+        cin >> cont;
         cin.ignore();
 
-        if (selection == 0) {
-            break;
-        } else if (selection == 1) {
-            cout << "Enter the file path: example ";
-            getline(cin, fileLocation);
-            list.readFromFile(fileLocation);
-            cout << "\nSuccessfully loaded file. Check your list so far by using choice 3." << endl;
-        } else if (selection == 2) {
-            list.addFavorites();
-            cout << "\nSuccessfully added game to list." << endl;
-        } else if (selection == 3) {
-            list.showFavorites();
-            cout << endl;
-        } else if (selection == 4) {
-            cout << "Enter the full file path: ";
-            getline(cin, fileLocation);
-            list.saveFile(fileLocation);
-            cout << endl << "Successfully saved" << endl;
+    }while (cont == 'y' || cont =='Y'); //If users wants to add another favorite the above code is executed again.
 
-        } else {
-            cout << "Invalid response. Try again,sucker";
-        }
-        } while (selection != 0);
+    cout << endl << "You provided it and now I'm listing it. Here's the list of your favorite beers:" << endl;
+    //Printing/Displaying list of favorites
+    list.showFavorites();
 
-    }
+    return 0;
 
 
 
-
+}

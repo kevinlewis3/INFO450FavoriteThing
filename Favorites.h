@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-class Favorites{
+class Favorites {
 private:
     string beerType;
     double alcContent;
@@ -14,6 +14,7 @@ public:
     string system;
 
     Favorites();
+
     Favorites(string n, string l, string b, double a, double p);
 
     ~Favorites();
